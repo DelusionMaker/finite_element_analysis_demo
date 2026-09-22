@@ -1,0 +1,17 @@
+{
+  "name": "bridge-fem",
+  "version": "0.1.0",
+  "private": true,
+  "description": "桥梁线性有限元应用 demo（React + TS + R3F）。内核 packages/core 零 UI 依赖。",
+  "workspaces": [
+    "packages/core",
+    "app"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w app",
+    "build": "npm run build -w app",
+    "preview": "npm run preview -w app",
+    "test": "npm run test -w @fem/core",
+    "typecheck": "npm run typecheck -w @fem/core && npm run typecheck -w app"
+  }
+}
